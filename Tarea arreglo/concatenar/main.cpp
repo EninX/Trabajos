@@ -12,6 +12,14 @@ void concatenar(char *lista1,char *lista2){
 	}
 }
 
+void concatenarpunteros(char *lista1,char *lista2){
+	int cont=0;
+	while(lista1[cont]!='\0')
+		cont++;
+	for(;*lista2!='\0';lista2++,lista1++){
+		*(lista1+cont)=*lista2;
+	}
+}
 
 int main()
 {
