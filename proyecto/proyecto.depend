@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1527003265 source:c:\users\alumno-g\desktop\proyecto\main.cpp
+	<iostream>
+	"clase.h"
+
+1527005610 c:\users\alumno-g\desktop\proyecto\include\clase.h
+
+1527003231 source:c:\users\alumno-g\desktop\proyecto\src\clase.cpp
+	"clase.h"
+
