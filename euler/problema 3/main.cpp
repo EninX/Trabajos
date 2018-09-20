@@ -2,20 +2,20 @@
 #include <string>
 using namespace std;
 int main()
-{
-	long int num=600851475143;
-	int distancia=0;
-
-	for( int i=2; num!=1; ++i)
-	{
-		while( num%i==0)
-		{
-			num/=i;
-			distancia=i;
-		}
-	}
-
-	cout<<"el numero requerido es: "<<distancia;
-
-	return 0;
+{	
+	long long num=600851475143, i=2,fact,cont=2;
+    	while(i<num){
+        	if(num%i==0){
+            	fact=i;
+            	while(fact%cont != 0){
+                	cont++;
+               		if(cont==fact-1){
+                    	cout<<fact<<endl;
+                    	cont=2;
+                    	break;
+                	}
+            	}
+       		}
+        	i++;
+    	}
 }
